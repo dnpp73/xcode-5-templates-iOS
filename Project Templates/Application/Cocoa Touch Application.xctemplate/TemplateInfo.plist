@@ -48,6 +48,7 @@
 			<key>Beginning</key>
 			<string>#import &lt;UIKit/UIKit.h&gt;
 
+
 @interface ___FILEBASENAME___ : UIViewController
 </string>
 			<key>End</key>
@@ -125,7 +126,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationDidBecomeActive:(UIApplication *)application
+			<string>- (void)applicationDidBecomeActive:(UIApplication*)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -139,7 +140,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationDidEnterBackground:(UIApplication *)application
+			<string>- (void)applicationDidEnterBackground:(UIApplication*)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -151,22 +152,22 @@
 		<string>
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationLifecycle</key>
-		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
+		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication*)application
 {
 
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (void)applicationDidEnterBackground:(UIApplication*)application
 {
 
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void)applicationWillEnterForeground:(UIApplication*)application
 {
 
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
+- (void)applicationDidBecomeActive:(UIApplication*)application
 {
 
 }
@@ -174,7 +175,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillEnterForeground:(UIApplication *)application
+			<string>- (void)applicationWillEnterForeground:(UIApplication*)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -188,7 +189,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillResignActive:(UIApplication *)application
+			<string>- (void)applicationWillResignActive:(UIApplication*)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -202,7 +203,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillTerminate:(UIApplication *)application
+			<string>- (void)applicationWillTerminate:(UIApplication*)application
 {</string>
 			<key>End</key>
 			<string>}
