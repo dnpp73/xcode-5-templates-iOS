@@ -1,11 +1,3 @@
-//
-//  ___FILENAME___
-//  ___PACKAGENAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//___COPYRIGHT___
-//
-
 #import "___VARIABLE_classPrefix:identifier___ViewController.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))

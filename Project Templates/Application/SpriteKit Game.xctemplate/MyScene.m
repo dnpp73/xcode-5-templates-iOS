@@ -1,16 +1,10 @@
-//
-//  ___FILENAME___
-//  ___PACKAGENAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
-//
-
 #import "___VARIABLE_classPrefix:identifier___MyScene.h"
+
 
 @implementation ___VARIABLE_classPrefix:identifier___MyScene
 
--(id)initWithSize:(CGSize)size {    
+- (id)initWithSize:(CGSize)size
+{    
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
@@ -28,7 +22,8 @@
     return self;
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent*)event
+{
     /* Called when a touch begins */
     
     for (UITouch *touch in touches) {
@@ -46,7 +41,8 @@
     }
 }
 
--(void)update:(CFTimeInterval)currentTime {
+- (void)update:(CFTimeInterval)currentTime
+{
     /* Called before each frame is rendered */
 }
 

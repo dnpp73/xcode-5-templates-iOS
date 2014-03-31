@@ -117,7 +117,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 							<integer>1</integer>
 						</dict>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:managedObjectContext</key>
-						<string>@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+						<string>@property (strong, nonatomic) NSManagedObjectContext* managedObjectContext;
 </string>
 					</dict>
 					<key>Nodes</key>
@@ -153,7 +153,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 						<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate, UIPopoverControllerDelegate&gt;
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</key>
-						<string>@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+						<string>@property (strong, nonatomic) UIPopoverController* flipsidePopoverController;
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:showInfo</key>
 						<string>- (IBAction)togglePopover:(id)sender;
@@ -184,18 +184,18 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 }
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
-						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController*)popoverController
 {
     self.flipsidePopoverController = nil;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
         
         if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-            UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+            UIPopoverController* popoverController = [(UIStoryboardPopoverSegue*)segue popoverController];
             self.flipsidePopoverController = popoverController;
             popoverController.delegate = self;
         }
@@ -236,7 +236,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 						<string>@interface ___VARIABLE_classPrefix:identifier___MainViewController : UIViewController &lt;___VARIABLE_classPrefix:identifier___FlipsideViewControllerDelegate, UIPopoverControllerDelegate&gt;
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:flipsidePopoverController</key>
-						<string>@property (strong, nonatomic) UIPopoverController *flipsidePopoverController;
+						<string>@property (strong, nonatomic) UIPopoverController* flipsidePopoverController;
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.h:methods:showInfo</key>
 						<string>- (IBAction)togglePopover:(id)sender;
@@ -259,16 +259,16 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 }
 </string>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
-						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController *)popoverController
+						<string>- (void)popoverControllerDidDismissPopover:(UIPopoverController*)popoverController
 {
     self.flipsidePopoverController = nil;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
-        UIPopoverController *popoverController = [(UIStoryboardPopoverSegue *)segue popoverController];
+        UIPopoverController* popoverController = [(UIStoryboardPopoverSegue*)segue popoverController];
         self.flipsidePopoverController = popoverController;
         popoverController.delegate = self;
     }
@@ -305,7 +305,7 @@ controller.managedObjectContext = self.managedObjectContext;</string>
 							<string>Main_iPhone.storyboard</string>
 						</dict>
 						<key>___VARIABLE_classPrefix:identifier___MainViewController.m:implementation:prepareForSegue</key>
-						<string>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+						<string>- (void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"showAlternate"]) {
         [[segue destinationViewController] setDelegate:self];
