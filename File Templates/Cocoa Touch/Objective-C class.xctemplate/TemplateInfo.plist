@@ -47,9 +47,9 @@
 			<key>Suffixes</key>
 			<dict>
 				<key>UITableViewCell</key>
-				<string>Cell</string>
+				<string>TableViewCell</string>
 				<key>UITableViewController</key>
-				<string>ViewController</string>
+				<string>TableViewController</string>
 				<key>UIViewController</key>
 				<string>ViewController</string>
 			</dict>
@@ -67,16 +67,21 @@
 		<dict>
 			<key>Default</key>
 			<string>false</string>
+			<key>Description</key>
+			<string>Whether to create a XIB file with the same name</string>
 			<key>Identifier</key>
-			<string>iPad</string>
+			<string>XIB</string>
 			<key>Name</key>
-			<string>Targeted for iPad</string>
+			<string>Also create XIB file</string>
+			<key>NotPersisted</key>
+			<true/>
 			<key>RequiredOptions</key>
 			<dict>
 				<key>cocoaTouchSubclass</key>
 				<array>
 					<string>UIViewController</string>
 					<string>UITableViewController</string>
+					<string>UITableViewCell</string>
 				</array>
 			</dict>
 			<key>Type</key>
@@ -84,37 +89,32 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>true</string>
+			<string>iPhone</string>
+			<key>Description</key>
+			<string>What device family to create the file for</string>
 			<key>Identifier</key>
-			<string>withXIB</string>
+			<string>deviceFamily</string>
 			<key>Name</key>
-			<string>With XIB for user interface</string>
+			<string></string>
 			<key>RequiredOptions</key>
 			<dict>
+				<key>XIB</key>
+				<array>
+					<string>true</string>
+				</array>
 				<key>cocoaTouchSubclass</key>
 				<array>
 					<string>UIViewController</string>
 					<string>UITableViewController</string>
+					<string>UITableViewCell</string>
 				</array>
 			</dict>
 			<key>Type</key>
-			<string>checkbox</string>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>usingARC</string>
-			<key>Name</key>
-			<string>CLANG_ENABLE_OBJC_ARC</string>
-			<key>RequiredOptions</key>
-			<dict>
-				<key>cocoaTouchSubclass</key>
-				<string>UITableViewController</string>
-			</dict>
-			<key>Type</key>
-			<string>buildSetting</string>
+			<string>popup</string>
 			<key>Values</key>
 			<array>
-				<string>NO</string>
+				<string>iPhone</string>
+				<string>iPad</string>
 			</array>
 		</dict>
 	</array>

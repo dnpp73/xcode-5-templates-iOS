@@ -50,8 +50,6 @@
 		<string>iphoneos</string>
 		<key>SharedSettings</key>
 		<dict>
-			<key>ARCHS</key>
-			<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
 			<key>CLANG_ENABLE_MODULES</key>
 			<string>YES</string>
 			<key>IPHONEOS_DEPLOYMENT_TARGET</key>

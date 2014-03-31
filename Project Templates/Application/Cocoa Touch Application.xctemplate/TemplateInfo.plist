@@ -24,7 +24,8 @@
 			<key>Beginning</key>
 			<string>- (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];</string>
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.</string>
 			<key>End</key>
 			<string>}
 </string>
@@ -36,7 +37,8 @@
 			<key>Beginning</key>
 			<string>- (void)viewDidLoad
 {
-    [super viewDidLoad];</string>
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.</string>
 			<key>End</key>
 			<string>}
 </string>
@@ -46,8 +48,15 @@
 		<key>*:viewControllerInterface</key>
 		<dict>
 			<key>Beginning</key>
-			<string>#import &lt;UIKit/UIKit.h&gt;
+			<string>//
+//  ___FILENAME___
+//  ___PACKAGENAME___
+//
+//  Created by ___FULLUSERNAME___ on ___DATE___.
+//___COPYRIGHT___
+//
 
+#import &lt;UIKit/UIKit.h&gt;
 
 @interface ___FILEBASENAME___ : UIViewController
 </string>
@@ -126,7 +135,7 @@
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationDidBecomeActive:(UIApplication*)application
+			<string>- (void)applicationDidBecomeActive:(UIApplication *)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -135,12 +144,12 @@
 			<integer>1</integer>
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidBecomeActive:comments</key>
-		<string>
+		<string>// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationDidEnterBackground:(UIApplication*)application
+			<string>- (void)applicationDidEnterBackground:(UIApplication *)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -149,33 +158,35 @@
 			<integer>1</integer>
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationDidEnterBackground:comments</key>
-		<string>
+		<string>// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationLifecycle</key>
-		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication*)application
+		<string>- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application
 {
-
+    // Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
 }
 
-- (void)applicationDidEnterBackground:(UIApplication*)application
+- (void)applicationDidEnterBackground:(UIApplication *)application
 {
-
+     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     // If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
 }
 
-- (void)applicationWillEnterForeground:(UIApplication*)application
+- (void)applicationWillEnterForeground:(UIApplication *)application
 {
-
+     // Called as part of transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
 }
 
-- (void)applicationDidBecomeActive:(UIApplication*)application
+- (void)applicationDidBecomeActive:(UIApplication *)application
 {
-
+     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
 }
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillEnterForeground:(UIApplication*)application
+			<string>- (void)applicationWillEnterForeground:(UIApplication *)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -184,12 +195,12 @@
 			<integer>1</integer>
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillEnterForeground:comments</key>
-		<string>
+		<string>// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillResignActive:(UIApplication*)application
+			<string>- (void)applicationWillResignActive:(UIApplication *)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -198,12 +209,13 @@
 			<integer>1</integer>
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillResignActive:comments</key>
-		<string>
+		<string>// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (void)applicationWillTerminate:(UIApplication*)application
+			<string>- (void)applicationWillTerminate:(UIApplication *)application
 {</string>
 			<key>End</key>
 			<string>}
@@ -212,7 +224,7 @@
 			<integer>1</integer>
 		</dict>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:applicationWillTerminate:comments</key>
-		<string>
+		<string>// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 </string>
 		<key>___VARIABLE_classPrefix:identifier___AppDelegate.m:implementation</key>
 		<string>@implementation ___VARIABLE_classPrefix:identifier___AppDelegate
