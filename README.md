@@ -1,3 +1,6 @@
-Xcode 5.1 Templates
+Xcode File and Project My Custom Templates (iPhoneOS.platform)
+===================
+### Xcode 5.1 Supported
 
-/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode
+### Where?
+`cd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates`
